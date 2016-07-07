@@ -8,11 +8,17 @@ namespace COMP2007_S2016_Lesson8C.Controllers
 {
     public class HomeController : Controller
     {
+        public string SubTitle;
+
+        //GET: /Home/Index or /
         public ActionResult Index()
         {
-            return View();
+            this.SubTitle = "Hello World!";
+            return View(SubTitle);
         }
 
+
+        //GET: /Home/About
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -20,6 +26,7 @@ namespace COMP2007_S2016_Lesson8C.Controllers
             return View();
         }
 
+        // GET: /Home/Contact
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
