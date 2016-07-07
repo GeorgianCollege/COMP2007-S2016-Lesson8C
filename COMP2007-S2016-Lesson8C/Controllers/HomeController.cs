@@ -14,7 +14,7 @@ namespace COMP2007_S2016_Lesson8C.Controllers
         public ActionResult Index()
         {
             this.SubTitle = "Hello World!";
-            return View(SubTitle);
+            return View();
         }
 
 
