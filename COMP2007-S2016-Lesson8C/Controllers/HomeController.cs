@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -8,12 +9,10 @@ namespace COMP2007_S2016_Lesson8C.Controllers
 {
     public class HomeController : Controller
     {
-        public string SubTitle;
 
         //GET: /Home/Index or /
         public ActionResult Index()
         {
-            this.SubTitle = "Hello World!";
             return View();
         }
 
